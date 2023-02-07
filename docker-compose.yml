@@ -3,9 +3,10 @@ version: "3.5"
 services:
 
   pdf-converter:
-    image: linux-server/libreoffice:latest
+    image: alpine:latest
     build:
       context: ./
       dockerfile: dockerfile
     volumes:
-      - ./pdfs:/pdfs
+      - ./ficheros:/ficheros
+
