@@ -6,6 +6,6 @@ RUN apk add terminus-font ttf-inconsolata ttf-dejavu font-noto font-noto-cjk ttf
 USER root
 # Copia los archivos .docx al contenedor
 COPY script.sh /root
-COPY /ficheros/*.docx /ficheros
+COPY /ficheros/*.docx /ficheros/
 # Establece la ruta de trabajo en /docs
 WORKDIR /ficheros/
