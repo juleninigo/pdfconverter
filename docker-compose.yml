@@ -9,4 +9,4 @@ services:
       dockerfile: dockerfile
     volumes:
       - ./ficheros:/ficheros
-
+      - ./pdfs:/pdfs

@@ -16,10 +16,11 @@ build:
 	@docker compose build
 
 convertir:
-	@docker compose run --rm -v $(pwd)/ficheros:/ficheros pdf-converter
+	@docker compose run --rm pdf-converter /bin/sh /root/script.sh
 
-borrar:
+clean:
 	@docker compose down -v --remove-orphans
+
 workspace:
 	@docker compose run --rm pdf-converter /bin/sh
 
